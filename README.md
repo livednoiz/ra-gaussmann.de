@@ -1,59 +1,92 @@
-# RaGaussmannDe
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+# ra-gaussmann.de
 
-## Development server
+Eine moderne, performante Website für die Rechtsanwaltskanzlei Gaussmann, entwickelt mit Angular 21, Tailwind CSS und SSR-Unterstützung.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- ✨ **Angular 21**: Neueste Angular-Version mit Standalone Components
+- 🎨 **Tailwind CSS**: Utility-first CSS für ein modernes, responsives Design
+- ⚡ **Server Side Rendering (SSR)**: Schnelle Ladezeiten & SEO-Optimierung
+- 🗺️ **MapLibre GL**: Interaktive Karten für Standorte
+- 🧩 **Modulare Struktur**: Übersichtliche Trennung von Core, Pages und Komponenten
+- 🧪 **Vitest**: Schnelle, moderne Tests
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Projektstruktur
 
 ```bash
-ng generate component component-name
+src/
+  app/
+  core/      # Layout, Header, Navbar, Footer
+    pages/     # Home, About, Contact, Imprint, Services
+    app.ts     # Root-Komponente
+    app.html   # Root-Template
+  main.ts      # Einstiegspunkt
+  main.server.ts # SSR-Einstiegspunkt
+  server.ts    # Express-Server für SSR
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Schnellstart
+
+### 1. Abhängigkeiten installieren
 
 ```bash
-ng generate --help
+    npm install
 ```
 
-## Building
-
-To build the project run:
+### 2. Entwicklungsserver starten
 
 ```bash
-ng build
+    npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Die App ist dann unter [http://localhost:4200](http://localhost:4200) erreichbar.
 
-## Running unit tests
+## Build & Deployment
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- **Production Build:**
 
 ```bash
-ng test
+    npm run build
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+- **SSR-Server starten:**
 
 ```bash
-ng e2e
+    npm run serve:ssr:ra-gaussmann.de
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Testen
 
-## Additional Resources
+- **Unit-Tests:**
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+    npm test
+```
+
+(Vitest-Konfiguration vorhanden)
+
+## Wichtige Abhängigkeiten
+
+- `@angular/*` (v21)
+- `tailwindcss`, `postcss`, `autoprefixer`
+- `maplibre-gl`
+- `express` (für SSR)
+- `vitest` (Tests)
+
+## Nützliche Befehle
+
+| Befehl                | Beschreibung                       |
+|-----------------------|------------------------------------|
+| `npm start`           | Dev-Server mit Live-Reload         |
+| `npm run build`       | Production-Build                   |
+| `npm test`            | Unit-Tests mit Vitest              |
+| `npm run serve:ssr:ra-gaussmann.de` | SSR-Server starten      |
+
+## Lizenz
+
+MIT
+
+---
+
+> Erstellt mit ❤️ und modernem Angular für ra-gaussmann.de
