@@ -1,1 +1,17 @@
-<p>navbar works!</p>
+<nav class="nav-container">
+  <div class="nav-inner">
+    <div class="nav-logo">Logo</div>
+
+    <button class="nav-toggle" (click)="toggleMenu()">
+      ☰
+    </button>
+
+    <ul class="nav-links" [ngClass]="{ open: mobileOpen }">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Start</a></li>
+      <li><a routerLink="/ueber" routerLinkActive="active">Über</a></li>
+      <li><a routerLink="/leistungen" routerLinkActive="active">Leistungen</a></li>
+      <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+      <li><a routerLink="/impressum" routerLinkActive="active">Impressum</a></li>
+    </ul>
+  </div>
+</nav>

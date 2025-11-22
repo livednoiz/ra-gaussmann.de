@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  standalone: true,
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    NgClass
+  ],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css',
+  styleUrls: ['./navbar.css']
 })
 export class Navbar {
-
+  mobileOpen = false;
+  toggleMenu() {
+    this.mobileOpen = !this.mobileOpen;
+  }
 }

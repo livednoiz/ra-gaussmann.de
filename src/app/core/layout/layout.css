@@ -1,0 +1,12 @@
+.layout-container {
+  min-height: 100vh;
+  background: #0C1B33;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem;
+}
