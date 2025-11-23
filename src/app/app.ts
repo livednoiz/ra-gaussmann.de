@@ -8,6 +8,7 @@ import { Layout } from './core/layout/layout';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
   protected readonly title = signal('ra-gaussmann.de');
 }

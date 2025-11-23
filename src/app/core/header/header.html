@@ -1,4 +1,10 @@
-<header *ngIf="isHome" class="hero">
-  <h1 class="hero-title">Kanzlei Gaussmann</h1>
-  <p class="hero-subtitle">Rechtsanwalt & Mediator – Familien·Erb·Miet·Arbeits·Strafrecht</p>
-</header>
+<ng-container *ngIf="isHome; else onlyNavbar">
+  <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/hero.png'); will-change: transform;" id="parallax-bg"></div>
+    <div class="relative z-10 bg-black/50 m-4 p-8 rounded-xl text-center text-white">
+      <h1 class="text-4xl font-bold mb-2">Willkommen bei ra-gaussmann.de</h1>
+      <p class="text-lg">Ihre Kanzlei für modernes Recht</p>
+    </div>
+  </header>
+</ng-container>
+<ng-template #onlyNavbar></ng-template>
