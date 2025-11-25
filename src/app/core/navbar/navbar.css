@@ -34,12 +34,12 @@
 }
 
 .nav-links a:hover {
-  color: #66FCF1;
+  color: #26C6DA;
 }
 
 .active {
-  color: #66FCF1 !important;
-  border-bottom: 2px solid #66FCF1;
+  color: #26C6DA !important;
+  border-bottom: 2px solid #26C6DA;
 }
 
 /* MOBILE */
@@ -48,7 +48,7 @@
   font-size: 1.8rem;
   background: none;
   border: none;
-  color: #66FCF1;
+  color: #26C6DA;
 }
 
 @media (max-width: 820px) {
