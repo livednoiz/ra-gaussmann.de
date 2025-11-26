@@ -1,1 +1,21 @@
-<p>services works!</p>
+<section class="services-container">
+
+  <h1 class="services-title">Rechtsgebiete</h1>
+  <p class="services-subtitle">
+    Kompetente anwaltliche Beratung und Vertretung in den wichtigsten juristischen Bereichen.
+  </p>
+
+  <div class="services-grid">
+    <div class="service-card" *ngFor="let s of services">
+
+      <div class="service-icon">
+        <i [class]="s.icon"></i>
+      </div>
+
+      <h3 class="service-title">{{ s.title }}</h3>
+      <p class="service-description">{{ s.description }}</p>
+
+    </div>
+  </div>
+
+</section>
