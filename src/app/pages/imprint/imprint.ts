@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './imprint.html',
   styleUrl: './imprint.css',
 })
-export class Imprint {
-
-}
+export class Imprint {}
