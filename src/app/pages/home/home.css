@@ -1,8 +1,7 @@
 /* -------- HERO -------- */
 .hero {
   position: relative;
-  height: 50vh;
-  /*background: url('/assets/kanzlei-hero.jpg') center/cover no-repeat; */
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;

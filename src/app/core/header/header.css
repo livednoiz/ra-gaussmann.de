@@ -1,1 +1,29 @@
 /* Parallax effect is handled via JS in header.ts */
+/* Floating light blobs */
+.floating-glow {
+  animation: float 12s ease-in-out infinite;
+}
+
+.floating-glow2 {
+  animation: float2 18s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(25px, -35px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-25px, 35px); }
+}
+
+/* Ticker-Animation jetzt rein per CSS */
+.ticker-text {
+  display: inline-block;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.ticker-fade-fix {
+  will-change: opacity;
+}
