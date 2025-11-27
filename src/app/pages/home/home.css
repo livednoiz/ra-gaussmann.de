@@ -1,0 +1,180 @@
+/* -------- HERO -------- */
+.hero {
+  position: relative;
+  height: 50vh;
+  /*background: url('/assets/kanzlei-hero.jpg') center/cover no-repeat; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 27, 51, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 1rem 2rem;
+  max-width: 700px;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #26C6DA;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 4rem;
+}
+
+.hero-btn {
+  padding: 0.9rem 1.8rem;
+  background: #26C6DA;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  border: solid #ffffff 2px;
+}
+
+.hero-btn:hover {
+  background: #26C6DAcc;
+}
+
+
+/* -------- USP -------- */
+.usp {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.usp-item {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 1.8rem;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(4px);
+}
+
+.usp-item .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+
+/* -------- SERVICES PREVIEW -------- */
+.services-preview {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.12);
+}
+
+
+/* -------- ABOUT SECTION -------- */
+.about {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1.5rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text p {
+  margin: 1rem 0 2rem;
+}
+
+.about-btn {
+  background: #4ea8ff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.about-image {
+  height: 300px;
+  background: url('/assets/kanzlei-gaussmann.jpg') center/cover no-repeat;
+  border-radius: 16px;
+}
+
+
+/* -------- CTA -------- */
+.cta {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  /*background: rgba(255,255,255,0.05);*/
+  margin-top: 4rem;
+}
+
+.cta-btn {
+  margin-top: 1.5rem;
+  background: #4ea8ff;
+  padding: 1rem 1.8rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+}
+
+
+@media (max-width: 850px) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .usp {
+    flex-direction: column;
+  }
+}
+
+/* -------- Animation -------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+    

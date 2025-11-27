@@ -59,6 +59,7 @@
 }
 input, textarea {
   color: #0C1B33;
+  background: #F5F7FA;
   padding: .9rem;
   border-radius: .5rem;
   border: 1px solid #ccc;
