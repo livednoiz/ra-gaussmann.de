@@ -6,6 +6,7 @@ import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
 import { Services } from './pages/services/services';
 import { Imprint } from './pages/imprint/imprint';
+import { Privacy } from './pages/privacy/privacy';
 
 export const routes: Routes = [
   { 
@@ -27,6 +28,10 @@ export const routes: Routes = [
   {
     path: 'impressum', component: Imprint,
     title: 'Impressum – Kanzlei Gaussmann'
+  },
+  {
+    path: 'datenschutz', component: Privacy,
+    title: 'Datenschutz – Kanzlei Gaussmann'
   },
   {
     path: '**',
