@@ -1,0 +1,23 @@
+.privacy-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px 35px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+h1, h2 {
+  color: #c7d6ff;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+p, li {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
