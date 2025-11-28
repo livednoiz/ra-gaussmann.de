@@ -1,3 +1,22 @@
+@media (min-width: 641px) {
+  #parallax-bg {
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    height: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .floating-glow, .floating-glow2 {
+    display: none;
+  }
+  #parallax-bg {
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    min-height: 220px;
+    height: 100%;
+  }
+}
 /* Parallax effect is handled via JS in header.ts */
 /* Floating light blobs */
 .floating-glow {

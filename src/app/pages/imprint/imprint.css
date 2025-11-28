@@ -51,4 +51,11 @@ a:hover {
   .imprint-container h1 {
     font-size: 2rem;
   }
+  .imprint-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+  }
 }
