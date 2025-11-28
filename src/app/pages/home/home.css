@@ -1,10 +1,14 @@
 /* -------- HERO -------- */
 .hero {
   position: relative;
+  min-height: 32vh;
   height: 40vh;
+  max-height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2.5rem 0 2rem 0;
+  box-sizing: border-box;
 }
 
 .hero-overlay {
@@ -24,9 +28,10 @@
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
   color: #26C6DA;
+  word-break: break-word;
 }
 
 .hero p {
@@ -161,13 +166,38 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .hero h1 {
-    font-size: 2.2rem;
+  .hero {
+    min-height: 28vh;
+    height: 32vh;
+    padding: 2rem 0 1.5rem 0;
   }
-
+  .hero h1 {
+    font-size: 1.7rem;
+  }
   .usp {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 22vh;
+    height: 28vh;
+    padding: 1.2rem 0 1rem 0;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    min-height: 16vh;
+    height: 20vh;
+    padding: 0.7rem 0 0.7rem 0;
+  }
+  .hero h1 {
+    font-size: 1rem;
   }
 }
 
