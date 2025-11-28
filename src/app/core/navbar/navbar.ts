@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, NavigationEnd, RouterLink, RouterLinkActive } from '@angular/router';
 import { NgClass, NgIf } from '@angular/common';
 
 @Component({
@@ -15,6 +15,15 @@ import { NgClass, NgIf } from '@angular/common';
 })
 export class Navbar {
   mobileOpen = false;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.mobileOpen = false;
+      }
+    });
+  }
+
   toggleMenu() {
     this.mobileOpen = !this.mobileOpen;
   }
