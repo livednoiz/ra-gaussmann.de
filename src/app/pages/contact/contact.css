@@ -29,10 +29,11 @@
   border-radius: 1rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: .3s ease;
+  border: solid #ffffff 2px;
 }
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 26px rgba(253, 252, 252, 0.774);
 }
 .card h2 {
   margin-bottom: 1rem;
